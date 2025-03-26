@@ -5,11 +5,14 @@ import java.util.Scanner;
 public class Ejercicio03 {
     private static String mensaje = "Introduzca los valores numericos que quiera. " +
             "\nEl programa se detendra unna vez introduzca una letra.";
+
     private final static Scanner scanner = new Scanner(System.in);
+
     public static void main(String[] args) {
         String mensaje = "Inrtoduzca un numero:";
         double[] array = solicitarNumeros(mensaje);
     }
+
     public static double[] solicitarNumeros(String mensaje){
         ArrayList<Double> numeros = new ArrayList<>();
         System.out.println(mensaje);
